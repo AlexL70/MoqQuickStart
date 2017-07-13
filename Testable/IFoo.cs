@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Testable
+﻿namespace Testable
 {
     public interface IFoo
     {
@@ -15,5 +9,7 @@ namespace Testable
         bool Submit(ref Bar bar);
         int GetCount();
         int GetCountThing();
+        bool Add(int value);
+        bool Subtract(int v);
     }
 }
