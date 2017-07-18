@@ -11,5 +11,20 @@
         int GetCountThing();
         bool Add(int value);
         bool Subtract(int v);
+
+        string Name { get; set; }
+        string NickName { get; set; }
+        IBar Bar { get; set; }
+    }
+
+    public interface IBar
+    {
+        IBaz Baz { get; set; }
+    }
+
+    public interface IBaz
+    {
+        string Name { get; set; }
+        int Age { get; set; }
     }
 }
